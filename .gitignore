@@ -1,0 +1,41 @@
+# Entornos y Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secretos
+.env
+
+# Datos y modelos pesados
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+*.gguf
+*.safetensors
+
+# Resultados y logs
+results/
+logs/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# SO
+.DS_Store
+pgdata/
+
+# Corpus institucional (no se sube al repositorio)
+data/corpus/
+
+# Chunks generados del corpus (contienen texto institucional)
+data/processed/
+
+# Archivos basura que Windows crea al copiar a WSL
+*Zone.Identifier
